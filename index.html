@@ -10,23 +10,24 @@
       .badge-orange {
    color: #ffffff;
    background-color: #ff8800;
-};
+}
+      .background-obory {
+        background-color: #eeeeee
+      }
     </style>
     <title>SOŠ Digital</title>
 </head>
-
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-        <div class="container-lg">
-          <div class="row">
-            <div class="col-3">
-              <a href="index.html">
-                <img src="public/logo.svg" alt="logo_SOŠ" width="40px" height="40px" style="display: inline;">
-              </a>
-            </div>
-            <h3 class="col-auto fw-bold fs-3 mt-1">SOŠ Digital</h3>
-          </div>
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex" href="index.html">
+            <img src="public/logo.svg" alt="logo_SOŠ" width="40px" height="40px" class="me-2">
+            <span class="fw-bold fs-3">SOŠ Digital</span>
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
       </nav>
 
@@ -35,7 +36,7 @@
           Fiktivní ukázkový web
         </span>
           <h1 class="col-12 fw-bold fs-2 mt-1">Střední odborná škola Digital</h1>
-          <h3 class="fw-light fs-6">Moderní vzdělávání v IT, designu a digitálních médiích.<br>Studujte u nás, jsme Vaše <i>jednička!</i></h3>
+          <h3 class="fw-light fs-6">Moderní vzdělávání v IT, designu a digitálních<br> médiích. Studujte u nás, jsme Vaše <i>jednička!</i></h3>
       </div>
     </header>
 
@@ -70,6 +71,7 @@
               <h4 class="fs-4 mb-0">99%</h4>
               <h5 class="fs-6 fw-light mb-0">Uplatnění</h5>
             </div>
+
           </div>
         </div>
       </section>
@@ -80,10 +82,48 @@
         </div>
       </section>
 
+      <section>
+        <div class="mt-5 pb-5 container-lg background-obory">
+          <h2 class="mt-5 pt-5">Studijní obory</h2>
+
+            <article>
+              <div class="mt-4 p-3 bg-light border rounded">
+                <h3>Fotografie</h3>
+                <h4 class="small fw-normal">Ateliér, práce se světlem a postprodukce.</h4>
+              </div>
+            </article>
+
+            <article>
+              <div class="mt-4 p-3 bg-light border rounded">
+                <h3>Video</h3>
+                <h4 class="small fw-normal">Střih, color grading, zvuk a produkce.</h4>
+              </div>
+            </article>
+
+            <article>
+              <div class="mt-4 p-3 bg-light border rounded">
+                <h3>Audio</h3>
+                <h4 class="small fw-normal">Podcasty, hudební produkce, mix a mastering.</h4>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+
+      <section>
+        <div class="container-lg mt-3">
+          <h2 class="mt-5 pt-2">Novinky</h2>
+            <article>
+
+            </article>
+        </div>
+      </section>
+
     </main>
 
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
 
