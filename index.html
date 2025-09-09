@@ -9,11 +9,51 @@
     <style>
       .badge-orange {
    color: #ffffff;
-   background-color: #ff8800;
+   background-color: #ff7b00;
 }
       .background-obory {
         background-color: #eeeeee
       }
+      .btn-predchozi {
+    background-color: #e4e3e3;
+    color: #505050;             
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+      }
+
+      .btn-predchozi:hover {
+    background-color: #6b6b6b;
+    color:#ffffff
+}
+
+      .btn-strany {
+    background-color: rgb(255, 255, 255);
+    color: #ff7b00;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: all 0.2s;
+}
+
+    .btn-strany:hover {
+    background-color: #0b62e6;
+    color:#ffffff
+}
+
+      .btn-dalsi {
+    background-color: rgb(255, 255, 255);
+    color: #ff7b00;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: all 0.2s;
+}
+
+    .btn-dalsi:hover {
+    background-color: #0b62e6;
+    color:#ffffff
+}
     </style>
     <title>SOŠ Digital</title>
   <script type="module" crossorigin src="/https://github.com/pslib-cz/2025-p2a-web-bootstrap-school-viktoravec/assets/index-DbXhWuYT.js"></script>
@@ -33,12 +73,12 @@
         </div>
       </nav>
 
-      <div class="container-lg">
+      <div class="container-lg" id="home">
         <span class="badge badge-orange mt-3">
           Fiktivní ukázkový web
         </span>
-          <h1 class="col-12 fw-bold fs-2 mt-1">Střední odborná škola Digital</h1>
-          <h3 class="fw-light fs-6">Moderní vzdělávání v IT, designu a digitálních<br> médiích. Studujte u nás, jsme Vaše <i>jednička!</i></h3>
+          <h1 class="col-12 fw-bold mt-1">Střední odborná škola Digital</h1>
+          <h3 class="fw-light fs-5">Moderní vzdělávání v IT, designu a digitálních<br> médiích. Studujte u nás, jsme Vaše <i>jednička!</i></h3>
       </div>
     </header>
 
@@ -61,17 +101,17 @@
 
             <div class="col-4 col-sm-3">
               <h4 class="fs-4 mb-0">45 000+</h4>
-              <h5 class="fs-6 fw-light mb-0">Absolventů</h5>
+              <h5 class="fs-6 fw-light mt-1">Absolventů</h5>
             </div>
 
             <div class="col-4 col-sm-3">
               <h4 class="fs-4 mb-0">150</h4>
-              <h5 class="fs-6 fw-light mb-0">Let zkušeností</h5> 
+              <h5 class="fs-6 fw-light mt-1">Let zkušeností</h5> 
             </div>
 
             <div class="col-4 col-sm-3">
               <h4 class="fs-4 mb-0">99%</h4>
-              <h5 class="fs-6 fw-light mb-0">Uplatnění</h5>
+              <h5 class="fs-6 fw-light mt-1">Uplatnění</h5>
             </div>
 
           </div>
@@ -79,33 +119,33 @@
       </section>
 
       <section>
-        <div class="container-lg mt-4">
+        <div class="container-lg mt-4 pb-5">
           <img src="/https://github.com/pslib-cz/2025-p2a-web-bootstrap-school-viktoravec/assets/hero-image-BYahcXaZ.webp" alt="school_drone_shot" class="rounded mx-auto d-block img-fluid">
         </div>
       </section>
 
       <section>
-        <div class="mt-5 pb-5 container-lg background-obory">
+        <div class="mt-5 pb-5 container-lg background-obory" id="obory">
           <h2 class="mt-5 pt-5">Studijní obory</h2>
 
             <article>
               <div class="mt-4 p-3 bg-light border rounded">
                 <h3>Fotografie</h3>
-                <h4 class="small fw-normal">Ateliér, práce se světlem a postprodukce.</h4>
+                <h4 class="fs-6 fw-normal">Ateliér, práce se světlem a postprodukce.</h4>
               </div>
             </article>
 
             <article>
               <div class="mt-4 p-3 bg-light border rounded">
                 <h3>Video</h3>
-                <h4 class="small fw-normal">Střih, color grading, zvuk a produkce.</h4>
+                <h4 class="fs-6 fw-normal">Střih, color grading, zvuk a produkce.</h4>
               </div>
             </article>
 
             <article>
               <div class="mt-4 p-3 bg-light border rounded">
                 <h3>Audio</h3>
-                <h4 class="small fw-normal">Podcasty, hudební produkce, mix a mastering.</h4>
+                <h4 class="fs-6 fw-normal">Podcasty, hudební produkce, mix a mastering.</h4>
               </div>
             </article>
             
@@ -113,18 +153,133 @@
       </section>
 
       <section>
-        <div class="container-lg mt-3">
-          <h2 class="mt-5 pt-2">Novinky</h2>
-            <article>
+        <div class="container-lg mt-3 pt-1" id="novinky">
+          <div class="mt-4 pt-2 d-flex justify-content-between align-items-center">
+            <h2 class="mb-0">Novinky</h2>
+            <form class="d-flex" role="search">
+              <input class="form-control form-control-md me-2" type="search" placeholder="Hledat..." aria-label="Search">
+              <button class="btn btn-outline-secondary btn-sm" type="submit">Hledat</button>
+            </form>
+          </div>
 
-            </article>
+        <article>
+          <div class="shadow mt-4 bg-light border rounded">
+              <img src="/https://github.com/pslib-cz/2025-p2a-web-bootstrap-school-viktoravec/assets/novinky-dod-CFYLtcaG.webp" alt="novinky_DOD_pslib" class="w-100 rounded-top">
+                <div class="p-3">
+                  <h3 class="fs-4">Den otevřených dveří - říjen</h3>
+                  <h4 class="fs-6 fw-normal">Zveme uchazeče a rodiče na prohlídku školy, laboratoří a ateliérů.</h4>
+                    <div class="d-flex justify-content-between">
+                      <span class="badge badge-orange mt-3">
+                        Aktualita
+                      </span>
+                      <span class="mt-2">
+                        <a href="index.html" class="fw-normal text-end">Číst více</a>
+                      </span>
+                    </div>
+                </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="shadow mt-4 bg-light border rounded">
+              <img src="/https://github.com/pslib-cz/2025-p2a-web-bootstrap-school-viktoravec/assets/novinky-iot-DPyyCkXs.webp" alt="novinky_iot" class="w-100 rounded-top">
+                <div class="p-3">
+                  <h3 class="fs-4">Úspěch v soutěži WebExpo Student</h3>
+                  <h4 class="fs-6 fw-normal">Náš tým obsadil 2. místo s projektem chytré kampaně pro neziskovku.</h4>
+                    <div class="d-flex justify-content-between">
+                      <span class="badge text-bg-success mt-3">
+                        Úspěch
+                      </span>
+                      <span class="mt-2">
+                        <a href="index.html" class="fw-normal text-end">Číst více</a>
+                      </span>
+                    </div>
+                </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="shadow mt-4 bg-light border rounded">
+              <img src="/https://github.com/pslib-cz/2025-p2a-web-bootstrap-school-viktoravec/assets/novinky-vr-DhAqpgrT.webp" alt="novinky_VR" class="w-100 rounded-top">
+                <div class="p-3">
+                  <h3 class="fs-4">Nové VR studio</h3>
+                  <h4 class="fs-6 fw-normal">Rozšiřujeme multimediální výuku o viruální realitu a 3D scanning.</h4>
+                    <div class="d-flex justify-content-between">
+                      <span class="badge text-bg-info mt-3">
+                        Vybavení
+                      </span>
+                      <span class="mt-2">
+                        <a href="index.html" class="fw-normal text-end">Číst více</a>
+                      </span>
+                    </div>
+                </div>
+          </div>
+        </article>
+
+        <div class="btn-group mt-4" role="group" aria-label="library">
+          <button type="button" class="btn btn-predchozi" id="predchozi">Předchozí</button>
+          <button type="button" class="btn btn-strany" id="1">1</button>
+          <button type="button" class="btn btn-strany" id="2">2</button>
+          <button type="button" class="btn btn-strany" id="3">3</button>
+          <button type="button" class="btn btn-dalsi" id="dalsi">Další</button>
         </div>
       </section>
-
     </main>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+      <section class="pt-5">
+        <div class="container-fluid bg-dark text-white pt-5">
+          <h3 class="">SOŠ Digital</h3>
+            <h4 class="text-secondary fs-6 fw-normal">Moderní vzdělávání v IT, designu a digitálnch médiích.<br>Studujte u nás, jsme Vaše jednička!</h4>
+
+              <h4 class="fs-5 pt-5">Navigace</h4>
+                <p>
+                  <h4 class="fs-6 mt-3 fw-normal"><a href="#" class="text-white text-decoration-none">Domů</a></h4>
+                  <h4 class="fs-6 fw-normal"><a href="#obory" class="text-white text-decoration-none">Obory</a></h4>
+                  <h4 class="fs-6 fw-normal text-decoration-none"><a href="#novinky" class="text-white text-decoration-none">Novinky</a></h4>
+                  <h4 class="fs-6 fw-normal text-decoration-none"><a href="" class="text-white text-decoration-none">Kontakt</a></h4>
+                </p>
+
+              <h4 class="fs-5 pt-5">Dokumenty</h4>
+                <p>
+                  <h4 class="fs-6 mt-3 fw-normal text-decoration-none"><a href="#" class="text-white text-decoration-none">Školní řád</a></h4>
+                  <h4 class="fs-6 fw-normal text-decoration-none"><a href="#" class="text-white text-decoration-none">GDPR</a></h4>
+                  <h4 class="fs-6 fw-normal text-decoration-none"><a href="#" class="text-white text-decoration-none">Pro rodiče</a></h4>
+                </p>
+
+              <h4 class="fs-5 pt-5">Odběr novinek</h4>
+                <form>
+                  <div class="col-12 col-md-6 mb-3">
+                    <label for="emailinput" class="form-label">Email</label>
+                    <input type="email" class="form-control mb-2" id="email_novinky" placeholder="Váš e-mail">
+                    <button type="submit" class="btn btn-primary w-100 tex">Odebírat</button>
+                  </div>
+                </form>
+
+                <div class="d-flex text-secondary pb-5">
+                  <h5 class="fs-6">© SOŠ Digital</h5>
+                  <h5 class="fs-6 ms-auto me-2"><a href="https://www.instagram.com/" class="link-secondary fw-normal">Instagram</a></h5>
+                  <h5 class="fs-6 me-2"><a href="https://www.youtube.com/" class="link-secondary fw-normal">YouTube</a></h5>
+                  <h5 class="fs-6 me-0"><a href="https://www.facebook.com/" class="link-secondary fw-normal">Facebook</a></h5>
+                </div>
+        </div>
+      </section>
+    </footer>
     <div id="app"></div>
   </body>
 </html>
-
 
